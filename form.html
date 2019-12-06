@@ -26,17 +26,30 @@
   <option value="Deg3">Math</option>
   <option value="Deg4">Other</option>
 </select>
-  
-  <br>
-</form> 
-<label class="container">I agree to these terms.
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-<p>
-<a href="process.html"><input type="submit" value="Submit">
-</label>
+ <form> 
+  <p><input type="checkbox" name="checkbox" value="I accept these terms" />Yes, I accept</p>
+  <input type="button" value="Submit" onclick="confirmTerms()">
+ </form>  
+<br> 
+ 
+ </script>   
+ <br>    
 
-<p></p>
+ <script type="text/javascript">
+ function confirmTerms() {
 
-</body>
-</html>
+ if (document.forms[0].checkbox.checked==false) { 
+ document.write("Not Checked");
+ alert("You did not select a box.");
+ return false;
+ }
+
+ if(document.forms[0].checkbox.checked) {
+ document.write("Checked"); 
+ window.location.href = "process.html";
+ }
+
+ }
+ </script>
+ </body>    
+ </html>
