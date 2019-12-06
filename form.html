@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<h2>Please in put needed information</h2>
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="John">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Doe">
+<br>
+  Email address:<br>
+  <input type="text" name="email" value="BOBDOLE@aol.com">
+  <br>
+  Your schools name:<br>
+  <input type="text" name="School Name" value="KCTCS">
+  <br><br>
+<form action="/action_page.php">
+ Select degree Major:<br>
+  <select>
+  <option value="Deg1">IT</option>
+  <option value="Deg2">General EDD</option>
+  <option value="Deg3">Math</option>
+  <option value="Deg4">Other</option>
+</select>
+ <form> 
+  <p><input type="checkbox" name="checkbox" value="I accept these terms" />Yes, I accept</p>
+  <input type="button" value="Submit" onclick="confirmTerms()">
+ </form>  
+<br> 
+ 
+ </script>   
+ <br>    
+
+ <script type="text/javascript">
+ function confirmTerms() {
+
+ if (document.forms[0].checkbox.checked==false) { 
+ document.write("Not Checked");
+ alert("You did not select a box.");
+ return false;
+ }
+
+ if(document.forms[0].checkbox.checked) {
+ document.write("Checked"); 
+ window.location.href = "process.html";
+ }
+
+ }
+ </script>
+ </body>    
+ </html>
