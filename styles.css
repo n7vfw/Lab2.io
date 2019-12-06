@@ -1,0 +1,26 @@
+body{ 
+
+background : #9bdec2; border: solid; /* Apply to all four sides */
+margin: 1em;
+margin: 2px;
+
+
+color: Red; 
+}
+
+
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+  	color: red;
+	padding: 25px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+	color: red;
+	padding: 25px;
+}
+color: finite; 
+}
